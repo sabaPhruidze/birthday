@@ -1,3 +1,4 @@
+import { useState, useReducer } from "react";
 import "./App.css";
 import { PersonData } from "./components/Persons";
 function App() {
@@ -10,8 +11,8 @@ function App() {
             <div className="person-container">
               <img src={person.img} alt={person.fullname} key={idx} />
               <div>
-                <p>{person.fullname}</p>
-                <p>{person.age} years</p>
+                <p className="info-container">{person.fullname}</p>
+                <p className="info-container">{person.age} years</p>
               </div>
             </div>
           ))}
