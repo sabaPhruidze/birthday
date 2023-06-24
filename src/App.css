@@ -20,8 +20,8 @@
 .container {
   min-width: 300px;
   max-width:500px;
-  min-height:130px;
-  max-height:800px;
+  min-height: 100px;
+  max-height:700px;
   background-color: #fff;
   padding:15px 30px;
   border-radius: 20px;
@@ -79,4 +79,9 @@ button:focus, button:active {
   outline: 0;
   border: 0;
   transform: scale(0.96);
+}
+@media (max-height: 730px) {
+  .body {
+    height:800px;
+  }
 }
